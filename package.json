@@ -1,0 +1,36 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js test --config=cucumber.js || true",
+    "posttest": "npx ts-node src/reports/reports.ts",
+    "tests:api": "playwright test --config=playwright.config.ts --project=Ops_Dashboard_API || true",
+    "tests:mock": "playwright test --config=api.config.ts "
+  },
+  "keywords": [],
+  "author": "Shijith",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.6.0",
+    "@playwright/test": "^1.37.1",
+    "@types/jest": "^29.5.4",
+    "@types/lodash": "^4.14.202",
+    "allure-commandline": "^2.25.0",
+    "allure-cucumberjs": "^2.9.2",
+    "allure-js-commons": "^2.5.0",
+    "allure-playwright": "^2.5.0",
+    "jsonschema": "^1.4.1",
+    "multiple-cucumber-html-reporter": "^3.4.0",
+    "playwright": "^1.37.1",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.398.0",
+    "@types/node": "^20.5.2",
+    "dotenv": "^16.3.1",
+    "prettier": "^3.0.3",
+    "wiremock-captain": "^3.3.0"
+  }
+}

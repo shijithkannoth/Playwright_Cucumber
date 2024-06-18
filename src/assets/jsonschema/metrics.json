@@ -1,0 +1,2443 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+	  "global_metrics": {
+		"type": "object",
+		"properties": {
+		  "frequency_hertz": {
+			"type": "object",
+			"properties": {
+			  "timestamp": {
+				"type": "integer"
+			  },
+			  "value": {
+				"type": "number"
+			  }
+			},
+			"required": [
+			  "timestamp",
+			  "value"
+			]
+		  }
+		},
+		"required": [
+		  "frequency_hertz"
+		]
+	  },
+	  "site_metrics": {
+		"type": "object",
+		"properties": {
+		  "cowley": {
+			"type": "object",
+			"properties": {
+			  "active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "expected_active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "max_cell_temperature_celcius": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "state_of_charge_percent": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_capacity_watthours": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_export_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_import_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "frequency_modes": {
+				"type": "array",
+				"items": [
+				  {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				]
+			  }
+			},
+			"required": [
+			  "active_power_watts",
+			  "expected_active_power_watts",
+			  "max_cell_temperature_celcius",
+			  "state_of_charge_percent",
+			  "available_capacity_watthours",
+			  "available_export_power_watts",
+			  "available_import_power_watts",
+			  "frequency_modes"
+			]
+		  },
+		  "dave": {
+			"type": "object",
+			"properties": {
+			  "active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "expected_active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "state_of_charge_percent": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_capacity_watthours": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_export_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_import_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "frequency_modes": {
+				"type": "array",
+				"items": [
+				  {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				]
+			  }
+			},
+			"required": [
+			  "active_power_watts",
+			  "expected_active_power_watts",
+			  "state_of_charge_percent",
+			  "available_capacity_watthours",
+			  "available_export_power_watts",
+			  "available_import_power_watts",
+			  "frequency_modes"
+			]
+		  },
+		  "gloria": {
+			"type": "object",
+			"properties": {
+			  "active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "expected_active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "max_cell_temperature_celcius": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "state_of_charge_percent": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_capacity_watthours": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_export_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_import_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "frequency_modes": {
+				"type": "array",
+				"items": [
+				  {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				]
+			  }
+			},
+			"required": [
+			  "active_power_watts",
+			  "expected_active_power_watts",
+			  "max_cell_temperature_celcius",
+			  "state_of_charge_percent",
+			  "available_capacity_watthours",
+			  "available_export_power_watts",
+			  "available_import_power_watts",
+			  "frequency_modes"
+			]
+		  },
+		  "maurice": {
+			"type": "object",
+			"properties": {
+			  "active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "expected_active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "max_cell_temperature_celcius": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "state_of_charge_percent": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_capacity_watthours": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_export_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_import_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "frequency_modes": {
+				"type": "array",
+				"items": [
+				  {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				]
+			  }
+			},
+			"required": [
+			  "active_power_watts",
+			  "expected_active_power_watts",
+			  "max_cell_temperature_celcius",
+			  "state_of_charge_percent",
+			  "available_capacity_watthours",
+			  "available_export_power_watts",
+			  "available_import_power_watts",
+			  "frequency_modes"
+			]
+		  },
+		  "melman": {
+			"type": "object",
+			"properties": {
+			  "active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "expected_active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "max_cell_temperature_celcius": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "state_of_charge_percent": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_capacity_watthours": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_export_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_import_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "frequency_modes": {
+				"type": "array",
+				"items": [
+				  {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				]
+			  }
+			},
+			"required": [
+			  "active_power_watts",
+			  "expected_active_power_watts",
+			  "max_cell_temperature_celcius",
+			  "state_of_charge_percent",
+			  "available_capacity_watthours",
+			  "available_export_power_watts",
+			  "available_import_power_watts",
+			  "frequency_modes"
+			]
+		  },
+		  "mr_chew": {
+			"type": "object",
+			"properties": {
+			  "active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "expected_active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "max_cell_temperature_celcius": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "state_of_charge_percent": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_capacity_watthours": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_export_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_import_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "frequency_modes": {
+				"type": "array",
+				"items": [
+				  {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				]
+			  }
+			},
+			"required": [
+			  "active_power_watts",
+			  "expected_active_power_watts",
+			  "max_cell_temperature_celcius",
+			  "state_of_charge_percent",
+			  "available_capacity_watthours",
+			  "available_export_power_watts",
+			  "available_import_power_watts",
+			  "frequency_modes"
+			]
+		  },
+		  "the_penguins": {
+			"type": "object",
+			"properties": {
+			  "active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "expected_active_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "max_cell_temperature_celcius": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "state_of_charge_percent": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_capacity_watthours": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_export_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "available_import_power_watts": {
+				"type": "object",
+				"properties": {
+				  "timestamp": {
+					"type": "integer"
+				  },
+				  "value": {
+					"type": "number"
+				  }
+				},
+				"required": [
+				  "timestamp",
+				  "value"
+				]
+			  },
+			  "frequency_modes": {
+				"type": "array",
+				"items": [
+				  {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				]
+			  }
+			},
+			"required": [
+			  "active_power_watts",
+			  "expected_active_power_watts",
+			  "max_cell_temperature_celcius",
+			  "state_of_charge_percent",
+			  "available_capacity_watthours",
+			  "available_export_power_watts",
+			  "available_import_power_watts",
+			  "frequency_modes"
+			]
+		  }
+		},
+		"required": [
+		  "cowley",
+		  "dave",
+		  "gloria",
+		  "maurice",
+		  "melman",
+		  "mr_chew",
+		  "the_penguins"
+		]
+	  },
+	  "battery_metrics": {
+		"type": "object",
+		"properties": {
+		  "cowley": {
+			"type": "object",
+			"properties": {
+			  "cowley_demo": {
+				"type": "object",
+				"properties": {
+				  "active_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "state_of_charge_percent": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "max_cell_temperature_celcius": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_export_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_import_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "frequency_mode": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_capacity_watthours": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				},
+				"required": [
+				  "active_power_watts",
+				  "state_of_charge_percent",
+				  "max_cell_temperature_celcius",
+				  "available_export_power_watts",
+				  "available_import_power_watts",
+				  "frequency_mode",
+				  "available_capacity_watthours"
+				]
+			  },
+			  "cowley_vfb": {
+				"type": "object",
+				"properties": {
+				  "active_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "max_cell_temperature_celcius": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_export_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_import_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "frequency_mode": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_capacity_watthours": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "state_of_charge_percent": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				},
+				"required": [
+				  "active_power_watts",
+				  "max_cell_temperature_celcius",
+				  "available_export_power_watts",
+				  "available_import_power_watts",
+				  "frequency_mode",
+				  "available_capacity_watthours",
+				  "state_of_charge_percent"
+				]
+			  }
+			},
+			"required": [
+			  "cowley_demo",
+			  "cowley_vfb"
+			]
+		  },
+		  "dave": {
+			"type": "object",
+			"properties": {
+			  "dave": {
+				"type": "object",
+				"properties": {
+				  "active_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "state_of_charge_percent": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_export_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_import_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "frequency_mode": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_capacity_watthours": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				},
+				"required": [
+				  "active_power_watts",
+				  "state_of_charge_percent",
+				  "available_export_power_watts",
+				  "available_import_power_watts",
+				  "frequency_mode",
+				  "available_capacity_watthours"
+				]
+			  }
+			},
+			"required": [
+			  "dave"
+			]
+		  },
+		  "gloria": {
+			"type": "object",
+			"properties": {
+			  "gloria": {
+				"type": "object",
+				"properties": {
+				  "active_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "state_of_charge_percent": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "max_cell_temperature_celcius": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_export_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_import_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "frequency_mode": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_capacity_watthours": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				},
+				"required": [
+				  "active_power_watts",
+				  "state_of_charge_percent",
+				  "max_cell_temperature_celcius",
+				  "available_export_power_watts",
+				  "available_import_power_watts",
+				  "frequency_mode",
+				  "available_capacity_watthours"
+				]
+			  }
+			},
+			"required": [
+			  "gloria"
+			]
+		  },
+		  "maurice": {
+			"type": "object",
+			"properties": {
+			  "maurice": {
+				"type": "object",
+				"properties": {
+				  "active_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "state_of_charge_percent": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "max_cell_temperature_celcius": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_export_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_import_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "frequency_mode": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_capacity_watthours": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				},
+				"required": [
+				  "active_power_watts",
+				  "state_of_charge_percent",
+				  "max_cell_temperature_celcius",
+				  "available_export_power_watts",
+				  "available_import_power_watts",
+				  "frequency_mode",
+				  "available_capacity_watthours"
+				]
+			  }
+			},
+			"required": [
+			  "maurice"
+			]
+		  },
+		  "melman": {
+			"type": "object",
+			"properties": {
+			  "melman": {
+				"type": "object",
+				"properties": {
+				  "active_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "state_of_charge_percent": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "max_cell_temperature_celcius": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_export_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_import_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "frequency_mode": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_capacity_watthours": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				},
+				"required": [
+				  "active_power_watts",
+				  "state_of_charge_percent",
+				  "max_cell_temperature_celcius",
+				  "available_export_power_watts",
+				  "available_import_power_watts",
+				  "frequency_mode",
+				  "available_capacity_watthours"
+				]
+			  }
+			},
+			"required": [
+			  "melman"
+			]
+		  },
+		  "mr_chew": {
+			"type": "object",
+			"properties": {
+			  "mr_chew": {
+				"type": "object",
+				"properties": {
+				  "active_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "state_of_charge_percent": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "max_cell_temperature_celcius": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_export_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_import_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "frequency_mode": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_capacity_watthours": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				},
+				"required": [
+				  "active_power_watts",
+				  "state_of_charge_percent",
+				  "max_cell_temperature_celcius",
+				  "available_export_power_watts",
+				  "available_import_power_watts",
+				  "frequency_mode",
+				  "available_capacity_watthours"
+				]
+			  }
+			},
+			"required": [
+			  "mr_chew"
+			]
+		  },
+		  "the_penguins": {
+			"type": "object",
+			"properties": {
+			  "penguin_kowalski": {
+				"type": "object",
+				"properties": {
+				  "active_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "state_of_charge_percent": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "max_cell_temperature_celcius": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_export_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_import_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "frequency_mode": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_capacity_watthours": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				},
+				"required": [
+				  "active_power_watts",
+				  "state_of_charge_percent",
+				  "max_cell_temperature_celcius",
+				  "available_export_power_watts",
+				  "available_import_power_watts",
+				  "frequency_mode",
+				  "available_capacity_watthours"
+				]
+			  },
+			  "penguin_private": {
+				"type": "object",
+				"properties": {
+				  "active_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "state_of_charge_percent": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "max_cell_temperature_celcius": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_export_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_import_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "frequency_mode": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_capacity_watthours": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				},
+				"required": [
+				  "active_power_watts",
+				  "state_of_charge_percent",
+				  "max_cell_temperature_celcius",
+				  "available_export_power_watts",
+				  "available_import_power_watts",
+				  "frequency_mode",
+				  "available_capacity_watthours"
+				]
+			  },
+			  "penguin_rico": {
+				"type": "object",
+				"properties": {
+				  "active_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "state_of_charge_percent": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "max_cell_temperature_celcius": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_export_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_import_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "frequency_mode": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_capacity_watthours": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				},
+				"required": [
+				  "active_power_watts",
+				  "state_of_charge_percent",
+				  "max_cell_temperature_celcius",
+				  "available_export_power_watts",
+				  "available_import_power_watts",
+				  "frequency_mode",
+				  "available_capacity_watthours"
+				]
+			  },
+			  "penguin_skipper": {
+				"type": "object",
+				"properties": {
+				  "active_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "state_of_charge_percent": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "max_cell_temperature_celcius": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_export_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_import_power_watts": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "frequency_mode": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "string"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  },
+				  "available_capacity_watthours": {
+					"type": "object",
+					"properties": {
+					  "timestamp": {
+						"type": "integer"
+					  },
+					  "value": {
+						"type": "number"
+					  }
+					},
+					"required": [
+					  "timestamp",
+					  "value"
+					]
+				  }
+				},
+				"required": [
+				  "active_power_watts",
+				  "state_of_charge_percent",
+				  "max_cell_temperature_celcius",
+				  "available_export_power_watts",
+				  "available_import_power_watts",
+				  "frequency_mode",
+				  "available_capacity_watthours"
+				]
+			  }
+			},
+			"required": [
+			  "penguin_kowalski",
+			  "penguin_private",
+			  "penguin_rico",
+			  "penguin_skipper"
+			]
+		  }
+		},
+		"required": [
+		  "cowley",
+		  "dave",
+		  "gloria",
+		  "maurice",
+		  "melman",
+		  "mr_chew",
+		  "the_penguins"
+		]
+	  },
+	  "last_updated": {
+		"type": "string"
+	  }
+	},
+	"required": [
+	  "global_metrics",
+	  "site_metrics",
+	  "battery_metrics",
+	  "last_updated"
+	]
+  }
