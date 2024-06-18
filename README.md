@@ -1,4 +1,4 @@
-# OpsDashBoardUK-Testing
+# Playwright and Typescript Sample Automation Framewrok
 This repo is an example framework using Playwright typescript and cucumber for GUI and API Automation.
 
 ## Tool and Technologies:
