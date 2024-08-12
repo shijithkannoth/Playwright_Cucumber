@@ -6,8 +6,7 @@
   "scripts": {
     "test": "cucumber-js test --config=cucumber.js || true",
     "posttest": "npx ts-node src/reports/reports.ts",
-    "tests:api": "playwright test --config=playwright.config.ts --project=Ops_Dashboard_API || true",
-    "tests:mock": "playwright test --config=api.config.ts "
+    "tests:api": "playwright test --config=playwright.config.ts --project=Ops_Dashboard_API || true"
   },
   "keywords": [],
   "author": "Shijith",
